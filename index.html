@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>我的网站</title>
-<style>
-body{text-align:center;margin-top:100px;font-size:20px;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我的主页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f7f8fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      background: #007bff;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .bio {
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .links a {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 6px;
+      background: #007bff;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .links a:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
 <body>
-<h1>我的网站上线啦 🎉</h1>
-<p>这是我用 GitHub 搭建的免费网站</p>
+  <div class="card">
+    <div class="avatar">我</div>
+    <h1>我的个人主页</h1>
+    <p class="bio">这是我用 GitHub Pages 搭建的免费网站<br>简单、干净、好用</p>
+    <div class="links">
+      <a href="https://github.com/">GitHub</a>
+      <a href="#">项目</a>
+      <a href="#">关于我</a>
+    </div>
+  </div>
 </body>
 </html>
